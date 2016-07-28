@@ -57,4 +57,4 @@ At this point you should have all the seed files. Now you can run:
 
 ## TODO
 
-- Build it ¯\_(ツ)_/¯
+- Build it ¯\\_(ツ)_/¯
