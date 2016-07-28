@@ -1,0 +1,30 @@
+import React from 'react';
+{{#if container}}
+import {observer, inject} from 'mobx-react';
+{{/if}}
+
+import style from './{{dashCase name}}.css';
+
+{{#if container}}
+@inject('store')
+@observer
+{{/if}}
+export default class {{ properCase name }} extends React.Component {
+
+    static defaultProps = {
+        type: '',
+    };
+
+    static propTypes = {
+        type: React.PropTypes.string,
+    };
+
+    render() {
+        return (
+            <div className={ style.{{camelCase name}} }>
+                <h2>{{ properCase name }}</h2>
+            </div>
+        );
+    }
+
+}
