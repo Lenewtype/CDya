@@ -1,5 +1,5 @@
 # react-mobx-seed
-Seed project for React + MobX
+This project was start with "Seed project for React + MobX," created by Sapient Global Markets. To it, I've add Firebase and Material-UI.
 
 
 [![Dependency Status](https://david-dm.org/sapientglobalmarkets/react-mobx-seed.svg)](https://david-dm.org/sapientglobalmarkets/react-mobx-seed)
@@ -15,9 +15,11 @@ Create your own project on Github or elsewhere. Then add a git-remote pointing t
 At this point you should have all the seed files. Now you can run:
 ```shell
 > npm install
+> npm start
 ```
 
-And you are off to the races!
+(Make sure nothing else is running on port 3000. Made that mistake!!)
+
 
 ## Libraries used
 
@@ -28,10 +30,15 @@ And you are off to the races!
 
 - React
 - PostCSS (cssnext + precss + css-modules)
+- Material-UI
 
 #### State Management
 
 - MobX
+
+#### Database
+- Firebase (data + user auth)
+- Firebase Tools (for deployment)
 
 #### Testing
 
@@ -50,5 +57,4 @@ And you are off to the races!
 
 ## TODO
 
-- Documentation
-- More variety in Tests (interaction, ajax, logic)
+- Build it ¯\_(ツ)_/¯
