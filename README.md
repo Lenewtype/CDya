@@ -63,7 +63,19 @@ At this point you should have all the seed files. Now you can run:
 
 ![Label](https://67.media.tumblr.com/3bde15da96ff5c1d79c3168ea0920728/tumblr_ob8jrt1Uss1ufu590o5_540.png "Label")
 
-A lovely, and somewhat hastily thrown together domain model made with Microsoft Word (I'm a developer, give me a break!!). This was created to show the expected values for what are essentially the 5 main kinds of data that I'll be using for this project. I will need to be adding a 6th eventually, representing the user. 
+A lovely, and somewhat hastily thrown together domain model made with Microsoft Word (I'm a developer, give me a break!!). This was created to show the expected values for what are essentially the 5 main kinds of data that I'll be using for this project: Release, Artist, Track, Label, and Muscian. I will need to be adding a 6th eventually, representing the user. 
+
+**Release** represents a physical (or digital) selection of music, interpreted as **Tracks**. A **Release** can have 1 or more **Tracks**.
+
+**Track** is the name of a song and which number it should be displayed in.
+
+**Artist** is the name of the group or individual who perform and create music. Oddly enough, an **Artist** does not actually have to have any **Releases**, but in most cases they will.
+
+**Musicians** are the individuals who **Artists** are comprised of. They typically only have one role (guitar, bass, etc), but in some cases that role changes during their career. Others have several roles. 
+
+Solo projects are still considered an **Artist** made up of a single **Muscian**, as they usually still have a support entourage.
+
+**Labels** are responsible for the distrubtion of **releases** and managing the performances of **Artists**. **Artists** associated with a label can be bands currently signed or one's that are now "graduates" of aforementioned **Label** but are signed elsewhere. Some **Labels** are only around to produce omnibus **Releases** and do not actually manage **Artists**.
 
 Several properties have an associated "romaji" version associated with them. Romaji is the name for turning Japanese characters into Roman letters-- "roma" being Japanese for "Rome" or "Roman", and "ji" means "character" or "letter." This will be vital for my project as most users will not be able to read Japanese unassisted, and it will help with SEO if someone is looking for a particular CD. Example:
 
