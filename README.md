@@ -63,6 +63,14 @@ At this point you should have all the seed files. Now you can run:
 
 ![Label](https://67.media.tumblr.com/3bde15da96ff5c1d79c3168ea0920728/tumblr_ob8jrt1Uss1ufu590o5_540.png "Label")
 
+A lovely, and somewhat hastily thrown together domain model made with Microsoft Word (I'm a developer, give me a break!!). This was created to show the expected values for what are essentially the 5 main kinds of data that I'll be using for this project. I will need to be adding a 6th eventually, representing the user. 
+
+Several properties have an associated "romaji" version associated with them. Romaji is the name for turning Japanese characters into Roman letters-- "roma" being Japanese for "Rome" or "Roman", and "ji" means "character" or "letter." This will be vital for my project as most users will not be able to read Japanese unassisted, and it will help with SEO if someone is looking for a particular CD. Example:
+
+**鳥籠愛人** - Torikago Aijin
+
+These properties will be helpful in things such as: song titles, custom release types (i.e.: "Concept Singles"), label names, artist names, etc. 
+
 
 ## TODO
 
