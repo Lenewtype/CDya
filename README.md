@@ -57,13 +57,9 @@ At this point you should have all the seed files. Now you can run:
 
 ####Domain Model
 
-![Release](https://66.media.tumblr.com/4ec85329f57faa1543490e82640d2cd6/tumblr_ob8jrt1Uss1ufu590o2_400.png "Release")
-
-![Track](https://66.media.tumblr.com/c74c17c44e8b28c3c37420e8ab1ffc96/tumblr_ob8jrt1Uss1ufu590o1_250.png "Track")
+![Release](https://66.media.tumblr.com/4ec85329f57faa1543490e82640d2cd6/tumblr_ob8jrt1Uss1ufu590o2_400.png "Release") ![Track](https://66.media.tumblr.com/c74c17c44e8b28c3c37420e8ab1ffc96/tumblr_ob8jrt1Uss1ufu590o1_250.png "Track")
 
 ![Artist](https://67.media.tumblr.com/e459ec303367c0109e0eb9ddd2af069d/tumblr_ob8jrt1Uss1ufu590o3_540.png "Artist")
-
-![Musician](https://67.media.tumblr.com/e459ec303367c0109e0eb9ddd2af069d/tumblr_ob8jrt1Uss1ufu590o3_540.png "Musician")
 
 ![Label](https://67.media.tumblr.com/3bde15da96ff5c1d79c3168ea0920728/tumblr_ob8jrt1Uss1ufu590o5_540.png "Label")
 
