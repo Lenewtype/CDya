@@ -5,20 +5,14 @@ This project was start with "Seed project for React + MobX," created by Sapient 
 [![Dependency Status](https://david-dm.org/sapientglobalmarkets/react-mobx-seed.svg)](https://david-dm.org/sapientglobalmarkets/react-mobx-seed)
 
 ## Getting started
-Create your own project on Github or elsewhere. Then add a git-remote pointing to this repo. Let's name it `mobx-seed`. Merge into your own branch.
+Getting this to run should only really need two commands:
 
-```shell
-> git remote add mobx-seed https://github.com/sapientglobalmarkets/react-mobx-seed.git
-> git pull mobx-seed master
-```
-
-At this point you should have all the seed files. Now you can run:
 ```shell
 > npm install
 > npm start
 ```
 
-(Make sure nothing else is running on port 3000. Made that mistake!!)
+(Make sure nothing else is running on port 3000. Made that mistake a few times...)
 
 
 ## Libraries used
