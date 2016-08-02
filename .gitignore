@@ -3,3 +3,5 @@ dist
 coverage
 *.log
 .idea
+.sublime-project
+.sublime-workspace

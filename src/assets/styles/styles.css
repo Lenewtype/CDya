@@ -5,6 +5,7 @@ body {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
+    background-color: #ededed;
 
     /* Helps fonts on OSX look more consistent with other systems */
     -webkit-font-smoothing: antialiased;
