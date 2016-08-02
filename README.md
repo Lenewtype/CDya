@@ -84,9 +84,13 @@ These properties will be helpful in things such as: song titles, custom release 
 ## TODO
 
 - Build it ¯\\_(ツ)_/¯
+-Create Firebase Instance
+-See if I can get a working URL up
+-Piece together what a release component looks like
 
 ## DONE
 
 ✓ Created README
+
 ✓ Added Material-UI
 
