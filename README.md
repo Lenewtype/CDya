@@ -1,5 +1,8 @@
-# react-mobx-seed
-This project was start with "Seed project for React + MobX," created by Sapient Global Markets. To it, I've add Firebase and Material-UI.
+# CD屋
+
+CD屋 (read: 'CD-ya'), is a pet project of mine. It is an organized catologue of foreign CDs (the music kind) with informatoin about their respective artists and associated labels. It will also give users the ability to mark items as part of their collection and provide ratings and comments on their favorite (or least favorite, more likely) releases.
+
+This project was start with "Seed project for React + MobX," created by Sapient Global Markets. To it, I've add Firebase and Material-UI. To view the original project and possibly start your own, check out their [Github page](https://github.com/sapientglobalmarkets/react-mobx-seed).
 
 
 [![Dependency Status](https://david-dm.org/sapientglobalmarkets/react-mobx-seed.svg)](https://david-dm.org/sapientglobalmarkets/react-mobx-seed)
