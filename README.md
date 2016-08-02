@@ -1,6 +1,6 @@
 # CD屋
 
-CD屋 (read: 'CD-ya'), is a pet project of mine. It is an organized catologue of foreign CDs (the music kind) with informatoin about their respective artists and associated labels. It will also give users the ability to mark items as part of their collection and provide ratings and comments on their favorite (or least favorite, more likely) releases.
+CD屋 (read: 'CD-ya'), is a pet project of mine. It is an organized catologue of foreign CDs (the music kind) with informatoin about their respective artists and associated labels. It will also give users the ability to mark items as part of their collection and provide ratings and comments on their favorite (or least favorite, most likely) releases. Sources of this data will be drawn from several different resources around the net, but as I am trying to ensure accuracy of information, it will need to be created manually.
 
 This project was start with "Seed project for React + MobX," created by Sapient Global Markets. To it, I've add Firebase and Material-UI. To view the original project and possibly start your own, check out their [Github page](https://github.com/sapientglobalmarkets/react-mobx-seed).
 
@@ -84,3 +84,9 @@ These properties will be helpful in things such as: song titles, custom release 
 ## TODO
 
 - Build it ¯\\_(ツ)_/¯
+
+## DONE
+
+✓ Created README
+✓ Added Material-UI
+
