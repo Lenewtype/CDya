@@ -2,9 +2,9 @@
 @import './colors.css';
 
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Hind, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 300;
     background-color: #ededed;
 
     /* Helps fonts on OSX look more consistent with other systems */
@@ -72,6 +72,10 @@ body {
 
 .mintable tfoot td {
     background-color: #dcefff;
+}
+
+.romaji{
+    font-style: italic;
 }
 
 }

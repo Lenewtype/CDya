@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import Release from '../../core/components/release/release';
 //import Home from './home';
 
 @observer(['store'])
@@ -12,6 +13,7 @@ export default class HomeContainer extends React.Component {
 
     constructor(props) {
         super(props);
+        console.log(Release);
     }
 
     render(){
@@ -46,7 +48,7 @@ export default class HomeContainer extends React.Component {
                 <FloatingActionButton mini={true} backgroundColor={tertiaryColor}>
                   <ContentAdd />
                 </FloatingActionButton>
-
+                <Release/>
             </div>
         );
     }

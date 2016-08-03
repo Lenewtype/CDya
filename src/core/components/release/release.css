@@ -1,0 +1,48 @@
+.release {
+}
+
+.release h2{
+    margin: 8px 0px 3px 0px;
+}
+
+.release h5{
+    margin: 0px 0px 3px 0px;
+    font-weight: 400;
+}
+
+.releaseContainer{
+    display: flex;
+    width: 100%;
+    background-color: #aeaeae;
+    border-top: 5px solid #FF5722;
+}
+.releaseImage{
+    background: url('images/blank-cd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1 0 0;
+}
+.releaseContent{
+    flex: 3 0 0;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.releaseSubHeaders{
+    font-family: Dosis;
+    font-weight: 300;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    max-width: 325px;
+}
+.releaseSubHeaders span{
+    margin-right: 15px;
+}
+span.releaseSubHeadersBold{
+    font-weight: 600;
+    margin-right: 6px;
+}
