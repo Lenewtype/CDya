@@ -3,7 +3,7 @@
 
 body {
     font-family: Hind, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     background-color: #ededed;
 
@@ -76,6 +76,15 @@ body {
 
 .romaji{
     font-style: italic;
+}
+
+.romaji--release{
+    color: #999;
+    font-size: 13px;
+}
+
+ol{
+    margin-top: 5px;
 }
 
 }

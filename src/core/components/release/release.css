@@ -5,6 +5,10 @@
     margin: 8px 0px 3px 0px;
 }
 
+.release li:not(:first-of-type){
+    padding-top: 7px;
+}
+
 .release h5{
     margin: 0px 0px 3px 0px;
     font-weight: 400;
@@ -16,20 +20,26 @@
     background-color: #aeaeae;
     border-top: 5px solid #FF5722;
 }
+.releaseImageContainer{
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1 0 0;
+}
 .releaseImage{
     background: url('images/blank-cd.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 120px;
     width: 120px;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: 1 0 0;
+    position: relative;
+    float: right;
+    margin-top: -57px;
 }
 .releaseContent{
     flex: 3 0 0;
     flex-direction: row;
     justify-content: flex-start;
+    color: white;
 }
 .releaseSubHeaders{
     font-family: Dosis;
@@ -38,11 +48,15 @@
     flex-flow: row wrap;
     align-items: flex-start;
     max-width: 325px;
+    margin-top: 4px;
+    margin-left: 6px;
 }
-.releaseSubHeaders span{
+.releaseSubHeader{
     margin-right: 15px;
+    color: #ddd;
 }
-span.releaseSubHeadersBold{
+.releaseSubHeadersBold{
     font-weight: 600;
     margin-right: 6px;
+    color: #FF3D00;
 }

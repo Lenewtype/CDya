@@ -6,6 +6,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Release from '../../core/components/release/release';
+import style from './home.css';
 //import Home from './home';
 
 @observer(['store'])
@@ -30,25 +31,27 @@ export default class HomeContainer extends React.Component {
                     <Tab label="Item Three" >
                     </Tab>
                 </Tabs>
-                <RaisedButton primary={true} label="Primary"/>
-                <RaisedButton secondary={true} label="Secondary"/>
-                <RaisedButton label="Default"/>
-                <FloatingActionButton secondary={true} >
-                  <ContentAdd />
-                </FloatingActionButton>
+                <div className={style.home}>
+                    <RaisedButton primary={true} label="Primary"/>
+                    <RaisedButton secondary={true} label="Secondary"/>
+                    <RaisedButton label="Default"/>
+                    <FloatingActionButton secondary={true} >
+                      <ContentAdd />
+                    </FloatingActionButton>
 
-                <FloatingActionButton mini={true} secondary={true}>
-                  <ContentAdd />
-                </FloatingActionButton>
+                    <FloatingActionButton mini={true} secondary={true}>
+                      <ContentAdd />
+                    </FloatingActionButton>
 
-                <FloatingActionButton backgroundColor={tertiaryColor} >
-                  <ContentAdd />
-                </FloatingActionButton>
+                    <FloatingActionButton backgroundColor={tertiaryColor} >
+                      <ContentAdd />
+                    </FloatingActionButton>
 
-                <FloatingActionButton mini={true} backgroundColor={tertiaryColor}>
-                  <ContentAdd />
-                </FloatingActionButton>
-                <Release/>
+                    <FloatingActionButton mini={true} backgroundColor={tertiaryColor}>
+                      <ContentAdd />
+                    </FloatingActionButton>
+                    <Release/>
+                </div>
             </div>
         );
     }
