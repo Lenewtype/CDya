@@ -14,12 +14,6 @@
     font-weight: 400;
 }
 
-.releaseContainer{
-    display: flex;
-    width: 100%;
-    background-color: #aeaeae;
-    border-top: 5px solid #FF5722;
-}
 .releaseImageContainer{
     flex-direction: row;
     justify-content: flex-end;
@@ -59,4 +53,18 @@
     font-weight: 600;
     margin-right: 6px;
     color: #FF3D00;
+}
+.releaseViewAll:hover{
+    text-decoration: underline;
+}
+.trackArtist{
+    display: inline-block;
+    background-color: #555;
+    padding: 3px 4px 3px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.trackArtist:hover{
+    color: #79CF21;
+    cursor: pointer;
 }

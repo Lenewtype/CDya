@@ -3,70 +3,139 @@ import style from './release.css';
 import Paper from 'material-ui/Paper';
 import {deepOrangeA400} from 'material-ui/styles/colors';
 import PlayArrow from 'material-ui/svg-icons/av/play-arrow';
+import AccountCircle from 'material-ui/svg-icons/action/account-circle';
+import Launch from 'material-ui/svg-icons/action/launch';
+import dateUtil from '../../utils/dateUtil';
 
 export default class Release extends React.Component {
     
     constructor(props){
         super(props);
+
     }
 
 
     render(){
+        let item = this.props.item;
+
         let titleStyles = {
-            color: deepOrangeA400,
+            color: (this.props.omni)? '#79CF21' : deepOrangeA400,
             fontSize: '24px'
         };
         let paperStyle = {
             display: 'flex',
             width: '100%',
             backgroundColor: '#262626',
-            borderTop: '5px solid #FF5722'
+            borderTop: '5px solid #FF5722',
+            borderTopColor: (this.props.omni)? '#79CF21' : deepOrangeA400
         };
         let releaseTitleStyle = {
             fontSize: '16px',
             position: 'relative',
             marginTop: '15px',
-            marginLeft: '18px'
-        }
+            marginLeft: '18px',
+            color: (this.props.omni)? '#7BD11F' : deepOrangeA400
+        };
         let playArrowStyle = {
             height: '17px',
             width: '17px',
-            color: deepOrangeA400,
+            color: (this.props.omni)? '#7BD11F' : deepOrangeA400,
             position: 'relative',
             top: '-2px'
         };
+        let releaseSubHeadersStyle = {
+            fontWeight: '600',
+            marginRight: '6px',
+            color: (this.props.omni)? '#88EA24' : deepOrangeA400
+        };
+        let allDetailsLinkSTyle = {
+            color: (this.props.omni)? '#7BD11F' : deepOrangeA400,
+            textTransform: 'uppercase',
+            fontSize: '13px',
+            position: 'relative',
+            marginLeft: '8px',
+            paddingBottom: '12px',
+            cursor: 'pointer',
+            width: '135px'
+
+        };
+        let launchStyles = { 
+            color: (this.props.omni)? '#79CF21' : deepOrangeA400, 
+            marginTop: '-4px',
+            height: '18px',
+            width: '18px'
+        };
+        let accountStyles = {
+            height: '16px',
+            width: '16px',
+            marginTop: '-2px',
+            marginLeft: '4px',
+            color: 'white'
+        }
         return (
             <div className={ style.release }>
-                <h2 style={titleStyles}>泣いているエッグプラント</h2>
-                <h5>Naiteiru EGGPLANT</h5>
+                <h2 style={titleStyles}>{item.name}</h2>
+                <h5>{item.nameRomaji}</h5>
                 <Paper className = {style.releaseContainer} style={paperStyle}>
                     <div className = {style.releaseContent}>
                         <div className= {style.releaseSubHeaders}>
-                            <span className={style.releaseSubHeadersBold}>Date:</span>
-                            <span className= {style.releaseSubHeader}>01/03/2014</span>
-                            <span className={style.releaseSubHeadersBold}>Price:</span>
-                            <span className= {style.releaseSubHeader}>1,400 yen</span>
-                            <span className={style.releaseSubHeadersBold}>Serial:</span>
-                            <span className= {style.releaseSubHeader}>MT-2001</span>
-                            <span className={style.releaseSubHeadersBold}>Type:</span>
-                            <span className= {style.releaseSubHeader}>最高盤 CD + DVD 
-                                <span className="romaji"> (Saikouban CD + DVD)</span>
+                            <span style={releaseSubHeadersStyle}>Date:</span>
+                            <span className= {style.releaseSubHeader}>{dateUtil(item.releaseDate)}</span>
+                            <span style={releaseSubHeadersStyle}>Price:</span>
+                            <span className= {style.releaseSubHeader}>{item.price}</span>
+                            <span style={releaseSubHeadersStyle}>Serial:</span>
+                            <span className= {style.releaseSubHeader}>{item.serialNumber}</span>
+                            <span style={releaseSubHeadersStyle}>Type:</span>
+                            <span className= {style.releaseSubHeader}>
+                                {
+                                    (item.customType)? `${item.customType} ${item.type}` : `${item.type}`
+                                }
+                                {
+                                    (item.customTypeRomaji)?
+                                        <span className="romaji"> ({item.customTypeRomaji} {item.type})</span>:''
+                                }
                             </span>
                         </div>
-                        <div className={style.releaseSubHeadersBold} style={releaseTitleStyle}>
-                            <PlayArrow style={playArrowStyle}/> CD
+                        {
+                            Object.keys(item.discs).map( disc => {
+                                let aDisc = item.discs[disc];
+                                return (
+                                    <div>
+                                        {
+                                            (Object.keys(item.discs).length > 1)?(<div key={aDisc.discNum} className={style.releaseSubHeadersBold} style={releaseTitleStyle}>
+                                                <PlayArrow style={playArrowStyle}/> {aDisc.type}
+                                            </div>) : <div className="spacer"></div>
+                                        }
+                                        <ol>
+                                            {
+                                                Object.keys(aDisc.tracks).map(track =>{
+                                                    let aTrack = aDisc.tracks[track];
+                                                    return (<li>
+                                                        {(() =>{
+                                                            if(aTrack.nameRomaji && this.props.omni){
+                                                                return (<span> <span className={style.trackArtist}>{aTrack.artistNameRomaji} <AccountCircle style={accountStyles}/></span> {aTrack.name} <br/> <span className="romaji  romaji--release">{aTrack.artistNameRomaji}: {aTrack.nameRomaji}</span></span>); 
+                                                            }
+                                                            else if(aTrack.nameRomaji && !this.props.omni){
+                                                                return (<span>{aTrack.name} <br/> <span className="romaji  romaji--release">{aTrack.nameRomaji}</span></span>);
+                                                            }
+                                                            else if(this.props.omni){
+                                                                return (<span> <span className={style.trackArtist}>{aTrack.artistName}  <AccountCircle style={accountStyles}/></span> {aTrack.name}</span>);
+                                                            }
+                                                            else{
+                                                                return (<span>{aTrack.name}</span>);
+                                                            }
+                                                        })()}
+                                                    </li>);
+                                                })
+                                            }
+                                        </ol>
+                                    </div>
+                                );
+                            })
+                        }
+                        <div className={style.releaseViewAll} style={allDetailsLinkSTyle}>
+                            <Launch style={launchStyles}/> View All Details
                         </div>
-                        <ol>
-                            <li>〜Garden Song (SE)〜</li>
-                            <li>泣いているエッグプラント <br/> <span className="romaji  romaji--release">Naiteiru EGGPLANT</span></li>
-                            <li>BANG!!</li>
-                        </ol>
-                        <div className={style.releaseSubHeadersBold} style={releaseTitleStyle}>
-                            <PlayArrow style={playArrowStyle}/> DVD
-                        </div>
-                        <ol>
-                            <li>泣いているエッグプラント (Music Video) <br/> <span className="romaji  romaji--release">Naiteiru EGGPLANT</span></li>
-                        </ol>
                     </div>
                     <div className={style.releaseImageContainer}>
                         <div className={style.releaseImage}></div>
