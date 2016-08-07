@@ -71,7 +71,7 @@ export default class Release extends React.Component {
             marginTop: '-2px',
             marginLeft: '4px',
             color: 'white'
-        }
+        };
         return (
             <div className={ style.release }>
                 <h2 style={titleStyles}>{item.name}</h2>
@@ -97,10 +97,10 @@ export default class Release extends React.Component {
                             </span>
                         </div>
                         {
-                            Object.keys(item.discs).map( disc => {
+                            Object.keys(item.discs).map( (disc, index) => {
                                 let aDisc = item.discs[disc];
                                 return (
-                                    <div>
+                                    <div key={index}>
                                         {
                                             (Object.keys(item.discs).length > 1)?(<div key={aDisc.discNum} className={style.releaseSubHeadersBold} style={releaseTitleStyle}>
                                                 <PlayArrow style={playArrowStyle}/> {aDisc.type}
@@ -110,7 +110,7 @@ export default class Release extends React.Component {
                                             {
                                                 Object.keys(aDisc.tracks).map(track =>{
                                                     let aTrack = aDisc.tracks[track];
-                                                    return (<li>
+                                                    return (<li key={aTrack.order}>
                                                         {(() =>{
                                                             if(aTrack.nameRomaji && this.props.omni){
                                                                 return (<span> <span className={style.trackArtist}>{aTrack.artistNameRomaji} <AccountCircle style={accountStyles}/></span> {aTrack.name} <br/> <span className="romaji  romaji--release">{aTrack.artistNameRomaji}: {aTrack.nameRomaji}</span></span>); 
