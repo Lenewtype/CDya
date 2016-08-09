@@ -23,11 +23,11 @@
     background: url('images/blank-cd.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
     position: relative;
     float: right;
-    margin-top: -57px;
+    margin-top: -46px;
 }
 .releaseContent{
     flex: 3 0 0;

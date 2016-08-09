@@ -11,7 +11,6 @@ export default class Release extends React.Component {
     
     constructor(props){
         super(props);
-
     }
 
     createDiscTemplate(item){

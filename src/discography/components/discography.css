@@ -1,0 +1,15 @@
+.discographyWrap {
+    display: flex;
+}
+.discography{
+    padding:0px 10px;
+}
+.discographyList{
+    flex: 3 0 0 ;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.discographyList > div{
+    margin-bottom: 25px;
+}
