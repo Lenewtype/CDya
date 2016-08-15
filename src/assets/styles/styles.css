@@ -42,6 +42,10 @@ body {
     background-color: var(--color-hover);
 }
 
+.menu > div > div:not(:last-of-type) .menuItem{
+    border-bottom: 1px solid #ccc !important;
+}
+
 /* See https://www.smashingmagazine.com/2008/08/top-10-css-table-designs */
 .mintable {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -59,7 +63,9 @@ body {
     padding: 10px 8px;
     border-bottom: 2px solid #106cc8;
 }
-
+.menu span[type="button"]{
+    -webkit-appearance: initial;
+}
 .mintable td {
     border-bottom: 1px solid #ccc;
     color: #669;

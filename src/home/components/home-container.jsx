@@ -1,10 +1,6 @@
 import React from 'react';
 import {observer} from 'mobx-react';
-import RaisedButton from 'material-ui/RaisedButton';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
-import {Tabs, Tab} from 'material-ui/Tabs';
-import Release from '../../core/components/release/release';
+//import Release from '../../core/components/release/release';
 import style from './home.css';
 //import Home from './home';
 
@@ -16,17 +12,14 @@ export default class HomeContainer extends React.Component {
     }
 
     render(){
-        let tertiaryColor = '#88EA24';
+        //let tertiaryColor = '#88EA24';
 
         return(
             <div>
                 
                 <div className={style.home}>
-                    {
-                        releaseCollection.map(  release => 
-                            <Release key={release.id} item={release} omni={release.isOmnibus}/>
-                        )
-                    }
+                   <h2>Home</h2>
+                   <p>This is a work in progress ☆ミ</p>
                 </div>
             </div>
         );
