@@ -1,5 +1,35 @@
 .sideMenu {
-    background-color: #333;
     flex: 1 0 0;
     flex-direction: row;
+}
+.sideMenuWrap{
+    background-color: #262626;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+.sideMenuWrap p {
+    padding-left: 10px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+.sideMenuList{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    list-style: none;
+    padding-left: 10px;
+}
+.sideMenuList li{
+    display: block;
+    max-width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.discographyImage > img{
+    max-width: 100%;
+}
+.discographyImage{
+    margin-bottom: 5px;
 }

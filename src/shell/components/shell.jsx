@@ -38,15 +38,21 @@ export default class Shell extends React.Component {
             height: '27px',
             width: '27px'
         };
+        let headerStyles = {
+            position: 'fixed',
+            width: '100%',
+            marginTop: '0px'
+        };
         return (
             <div>
                 <AppBar title={'CD屋'}
+                    style={headerStyles}
                     onLeftIconButtonTouchTap={
                         () => {this.toggleDrawer();}
                 }></AppBar>
-
-                {this.props.children}
-
+                <div style={{paddingTop: '65px'}}>
+                    {this.props.children}
+                </div>
                 <Drawer className="menu" open={this.props.store.menuOpen}>
                     <MenuItem onClick={() => this.toggleDrawer()}
                         style={topItemStyles}>CD屋 <Close style={closeStyle}/></MenuItem>

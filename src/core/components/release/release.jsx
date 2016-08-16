@@ -76,14 +76,28 @@ export default class Release extends React.Component {
         );
     }
 
-
-    render(){
-        
-        let item = this.props.item;
+    renderReleaseTitle(item){
         let titleStyles = {
             color: (this.props.omni)? '#79CF21' : deepOrangeA400,
             fontSize: '24px'
         };
+        let versionStyles = {
+            fontSize: '11px',
+            textDecoration: 'underline',
+            textDecorationStyle: 'dotted',
+            position: 'relative',
+            top: '-10px'
+        };
+        return ( 
+            <div>
+                <h2 style={titleStyles}>{item.name} <small style={versionStyles}>{item.version}</small></h2>
+                <h5>{item.nameRomaji}</h5>
+            </div>
+        );
+    }
+    render(){
+        
+        let item = this.props.item;
         let paperStyle = {
             display: 'flex',
             width: '100%',
@@ -116,8 +130,7 @@ export default class Release extends React.Component {
         };
         return (
             <div className={ style.release }>
-                <h2 style={titleStyles}>{item.name}</h2>
-                <h5>{item.nameRomaji}</h5>
+                { this.renderReleaseTitle(item)}
                 <Paper className = {style.releaseContainer} style={paperStyle}>
                     <div className = {style.releaseContent}>
                         <div className= {style.releaseSubHeaders}>

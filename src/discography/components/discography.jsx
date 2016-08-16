@@ -11,17 +11,33 @@ export default class DiscographyPage extends React.Component {
         super(props);
         const {discography} = this.props.store;
         this.discography = discography.discographyListing;
-    }    
+        this.currentBand = discography.currentBand;
+    }
+
+    renderBandTitle(){
+        if(this.currentBand.nameRomaji){
+            return ( 
+                <div>
+                    <h1 className={style.bandName}>{this.currentBand.nameRomaji}</h1>
+                    <h4 className={style.bandName}>{this.currentBand.name}</h4>
+                </div>
+            );
+        }
+        else{
+            return ( <h1 className={style.bandName}>{this.currentBand.name}</h1>);
+        }
+    }
 
 
     render() {
         return (
             <div className={ style.discography }>
-                <h2>Discography</h2>
-                <p>Artist picture will go here</p>
                 <div className={style.discographyWrap}>
-                    <SideMenu className={style.discographySideMenu}/>
+                    <SideMenu className={style.discographySideMenu} img={this.currentBand.defaultPic}/>
                     <div className={style.discographyList}>
+                        <div className={style.bandNav}>
+                            {this.renderBandTitle()}
+                        </div>
                         {
                             this.discography.map( release => 
                                 <Release key={release.id} item={release} omni={release.isOmnibus}/>
