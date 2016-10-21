@@ -1,0 +1,42 @@
+.releasesWrap {
+    display: flex;
+    margin-top: 10px;
+}
+.releases{
+    padding:0px 10px;
+}
+.releasesList{
+    flex: 3 0 0 ;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.releasesList > div{
+    margin-bottom: 25px;
+}
+.discographyImage{
+    flex: 1 0 0;
+    flex-direction: row;
+    background-color: red;
+}
+.discographyImage > img{
+    max-width: 100%;
+}
+.bandNav{
+    flex: 3 0 0 ;
+    flex-direction: row;
+    padding: 0px 3px;
+}
+.bandInfo{
+    display: flex;
+    margin-bottom: 10px;
+}
+.bandName{
+    margin-top: -5px;
+    margin-bottom: 0px;
+    color: #212121;
+}
+h4.bandName{
+    color: #666;
+    font-size: 11px;
+}

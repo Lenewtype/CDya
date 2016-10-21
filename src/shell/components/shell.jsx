@@ -58,6 +58,7 @@ export default class Shell extends React.Component {
                         style={topItemStyles}>CD屋 <Close style={closeStyle}/></MenuItem>
                     <MenuItem className="menuItem" onClick={ () => this.goToPage('/')}>Home</MenuItem>
                     <MenuItem className="menuItem" onClick={ () => this.goToPage('/discography')}>Discography</MenuItem>
+                    <MenuItem className="menuItem" onClick={ () => this.goToPage('/releases/4444')}>Releases</MenuItem>
                 </Drawer>
             </div>
         );

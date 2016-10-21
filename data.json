@@ -1,0 +1,155 @@
+{
+    "releases": {
+        "rwewfw3rfvb4f": {
+            "id": "rwewfw3rfvb4f",
+            "name": "泣いているエッグプラント",
+            "nameRomaji": "Naiteiru EGGPLANT",
+            "releaseDate": 1388797518648,
+            "price": "1,400 yen",
+            "serialNumber": "MT-2001",
+            "type": "CD + DVD",
+            "customType": "最高盤",
+            "customTypeRomaji": "Saikouban",
+            "isOmnibus": false,
+            "artistID": "a2342",
+            "discs": {
+                "disc1": {
+                    "type": "CD",
+                    "discNum": 1,
+                    "tracks": {
+                        "track1": {
+                            "name": "〜Garden Song (SE)〜",
+                            "order": 1
+                        },
+                        "track2": {
+                            "name": "泣いているエッグプラント",
+                            "nameRomaji": "Naiteiru EGGPLANT",
+                            "order": 2
+                        },
+                        "track3": {
+                            "name": "BANG!!",
+                            "order": 3
+                        }
+                    }
+                },
+                "disc2": {
+                    "type": "DVD",
+                    "discNum": 2,
+                    "tracks": {
+                        "track1": {
+                            "name": "泣いているエッグプラント",
+                            "nameRomaji": "Naiteiru EGGPLANT",
+                            "order": 1
+                        }
+                    }
+                }
+            }
+        },
+        "rweww3rfvb4f": {
+            "id": "rweww3rfvb4f",
+            "name": "君と僕とりんごとメランコリー",
+            "nameRomaji": "Kimi to Boku to Ringo to MELANCHOLY",
+            "releaseDate": 1425445200000,
+            "price": "1,550 yen",
+            "serialNumber": "MT-2007A",
+            "version": "TYPE-A",
+            "type": "CD",
+            "isOmnibus": false,
+            "artistID": "a2342",
+            "discs": {
+                "disc1": {
+                    "type": "CD",
+                    "discNum": 1,
+                    "tracks": {
+                        "track1": {
+                            "name": "Sad",
+                            "order": 1
+                        },
+                        "track2": {
+                            "name": "Kanashimi [ni]",
+                            "order": 2
+                        }
+                    }
+                }
+            }
+        },
+        "rweww3rfvb4fb": {
+            "id": "rweww3rfvb4fb",
+            "name": "君と僕とりんごとメランコリー",
+            "nameRomaji": "Kimi to Boku to Ringo to MELANCHOLY",
+            "releaseDate": 1425445200000,
+            "price": "1,550 yen",
+            "serialNumber": "MT-2007B",
+            "version": "TYPE-B",
+            "type": "CD",
+            "isOmnibus": false,
+            "artistID": "a2342",
+            "discs": {
+                "disc1": {
+                    "type": "CD",
+                    "discNum": 1,
+                    "tracks": {
+                        "track1": {
+                            "name": "Sad",
+                            "order": 1
+                        },
+                        "track2": {
+                            "name": "SPicE KacE",
+                            "order": 2
+                        }
+                    }
+                }
+            }
+        },
+        "eir42gw": {
+            "id": "eir42gw",
+            "name": "Valuable Exchange -Innovation-",
+            "releaseDate": 1428120000000,
+            "price": "3,000 yen",
+            "serialNumber": "RTT-11",
+            "type": "Omnibus CD",
+            "isOmnibus": true,
+            "artists": {
+                "a2422": true,
+                "a234": true,
+                "a232": true
+            },
+            "discs": {
+                "disc1": {
+                    "type": "CD",
+                    "discNum": 1,
+                    "tracks": {
+                        "track1": {
+                            "name": "Phase 0",
+                            "artistName": "FaLloW",
+                            "order": 1,
+                            "artistID": "a2422"
+                        },
+                        "track2": {
+                            "name": "スキップ、スキップ！！",
+                            "nameRomaji": "SKIP, SKIP!!",
+                            "artistName": "チェリーヴァン",
+                            "artistNameRomaji": "Cherry Vin",
+                            "artistID": "a232",
+                            "order": 2
+                        },
+                        "track3": {
+                            "name": "Breakerxxxxxx",
+                            "order": 3,
+                            "artistName": "Pulse",
+                            "artistID": "a234"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "admins": {
+        "111": true,
+        "222": true,
+        "a5f306ce-b0e0-4fce-ab1a-de412d3f1cf0": true
+    },
+    "superAdmins":{
+        "111": true
+    }
+}

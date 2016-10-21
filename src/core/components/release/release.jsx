@@ -41,7 +41,7 @@ export default class Release extends React.Component {
             Object.keys(item.discs).map( (disc, index) => {
                 let aDisc = item.discs[disc];
                 return (
-                    <div key={index}>
+                    <div className={style.releaseTrackList} key={index}>
                         {
                             (Object.keys(item.discs).length > 1)?(<div key={aDisc.discNum} className={style.releaseSubHeadersBold} style={releaseTitleStyle}>
                                 <PlayArrow style={playArrowStyle}/> {aDisc.type}
@@ -103,7 +103,9 @@ export default class Release extends React.Component {
             width: '100%',
             backgroundColor: '#262626',
             borderTop: '5px solid #FF5722',
-            borderTopColor: (this.props.omni)? '#79CF21' : deepOrangeA400
+            borderTopColor: (this.props.omni)? '#79CF21' : deepOrangeA400,
+            minHeight: '300px',
+            position: 'relative'
         };
         
         let releaseSubHeadersStyle = {
@@ -115,9 +117,9 @@ export default class Release extends React.Component {
             color: (this.props.omni)? '#7BD11F' : deepOrangeA400,
             textTransform: 'uppercase',
             fontSize: '13px',
-            position: 'relative',
-            marginLeft: '8px',
-            paddingBottom: '12px',
+            position: 'absolute',
+            marginLeft: '10px',
+            bottom: '12px',
             cursor: 'pointer',
             width: '135px'
 

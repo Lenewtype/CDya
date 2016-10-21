@@ -1,5 +1,6 @@
 import {DiscographyStore} from './discography/discography.store';
 import {observable, action} from 'mobx';
+//import authService from './auth/auth.service';
 
 class Store {
     title = 'CD屋';
@@ -9,9 +10,9 @@ class Store {
     @observable menuOpen = false;
 
     init() {
-        /*this.github.init();
-        this.clock.init();*/
         this.discography.init();
+
+        this.discography.fetchReleasesForArtst('a2342');
     }
 
     @action toggleMenu(){
